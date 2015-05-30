@@ -1,0 +1,9 @@
+# Site settings
+title: Bagpiper James Kerr
+email: jkerr838@gmail.com
+phone: (714) 309-6756
+location: Orange County, CA
+price: $300
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+# Build settings
+markdown: kramdown
