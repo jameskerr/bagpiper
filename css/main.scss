@@ -55,17 +55,19 @@ $on-laptop:        800px;
 
 img {
   box-sizing: border-box;
-  border-top: 8px solid $blue;
 }
 
 
 .home {
     text-align: center;
     font-size: 18px;
+    @include media-query($on-palm) {
+      overflow-x: hidden;
+    }
 }
 
 .section {
-  padding: 60px 0;
+  padding: 60px 5px;
 }
 
 header.header {
@@ -77,13 +79,14 @@ header.header {
       margin: 0;
     }
     address { 
+      font-style: normal;
       text-align: right; float: right;
     }
     .small { font-size: $base-font-size; display: block;}
     h1, a {
       font-size: 36px;
       @include media-query($on-palm) {
-        font-size: 24px;
+        font-size: 20px;
       }
     }
 }
@@ -96,10 +99,19 @@ header.header {
 }
 
 blockquote {
+    font-size: 20px;
+    font-family: Georgia, serif;
+    font-style: normal;
     text-align: center;
     margin: 30px 0;
     border: none;
     .cite { font-weight: bold; }
+}
+
+.ribbon h3 {
+  @include media-query($on-palm) {
+    font-size: 36px;
+  }
 }
 
 .price {
